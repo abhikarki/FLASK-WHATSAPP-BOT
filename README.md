@@ -2,7 +2,7 @@
 ### Overview
 FLASK-WHATSAPP-BOT is a whatsapp bot built using Flask and the Twilio API, designed to extract and summarize content from URLs shared within WhatsApp messages. By using the Natural Language Processing (NLP) with the nltk library, the bot provides a concise summaries of web content, reducing the need to open the link for full details.
 ### Motivation
-The motivation behind this bot comes from the frequent appearance of Facebook posts with engaging headlines that promise news or a story but often lead to external sites with clickbait content. This bot allows users to bypass the clickbait by directly summarizing the content, saving time and reducing frustration from misleading headlines.
+Have you ever clicked on a Facebook post with a headline that sounds too good to be true, only to be greeted with a clickbait-laden article that leaves you questioning your life choices? Yeah, me too. That's why I built this bot. It skips the endless cycle of disappointment by summarizing the content of those "engaging" links, so you can avoid wasting time on clickbait and get straight to the point. Because, honestly, nobody has time for that!
 
 ### How to Use
 ## Send an intial message "join loss-similar" to +1 (415)523-8886 for setup and you are good to go. Send the URLs and get the summaries.
