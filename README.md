@@ -7,8 +7,8 @@ Have you ever clicked on a Facebook post with a headline that sounds too good to
 ### How to Use
 ## Send an intial message "join loss-similar" to +1 (415)523-8886 for setup and you are good to go. Send the URLs and get the summaries.
 
-<img src="images/whatsappScreenshot.png" alt="Description of the image" width="300" height = "300"/>
-<img src="images/whatsappScreenshot2.png" alt="Description of the image" width="300" height = "300"/>
+<img src="images/whatsappScreenshot.png" alt="Description of the image" width="300" height = "400"/>
+<img src="images/whatsappScreenshot2.png" alt="Description of the image" width="300" height = "400"/>
 
 ### Features
 1. Link Extraction: Automatically detects URLs in incoming WhatsApp messages.
