@@ -4,7 +4,7 @@ FLASK-WHATSAPP-BOT is a whatsapp bot built using Flask and the Twilio API, desig
 ### ✨ Motivation
 Have you ever clicked on a Facebook post with a headline that sounds too good to be true, only to be greeted with a clickbait-laden article that leaves you questioning your life choices? Yeah, me too. That's why I built this bot. It skips the endless cycle of disappointment by summarizing the content of those "engaging" links, so you can avoid wasting time on clickbait and get straight to the point. Because, honestly, nobody has time for that!
 
-### 🔨 How to Use
+### 🔨 How to Use it
 ## Send an intial message "join loss-similar" to +1 (415)523-8886 for setup and you are good to go. Send the URLs and get the summaries.
 
 <img src="images/whatsappScreenshot.png" alt="Description of the image" width="300" height = "350"/>
