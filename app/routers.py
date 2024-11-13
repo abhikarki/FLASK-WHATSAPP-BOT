@@ -29,7 +29,7 @@ def webhook():
         else:
             response_text = "Could not retrieve content from the link."
     else:
-        response_text = "No link found in the message."
+        response_text = message
 
     return Response(f"<Response><Message>{response_text}</Message></Response>", mimetype='text/xml')
 
