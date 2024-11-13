@@ -1,5 +1,7 @@
 from flask import Blueprint, request, Response, Flask, request, jsonify
 import re
+import nltk
+nltk.download('punkt')
 import requests
 from bs4 import BeautifulSoup
 from twilio.twiml.messaging_response import MessagingResponse
