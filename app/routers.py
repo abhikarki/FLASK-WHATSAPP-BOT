@@ -28,6 +28,7 @@ def webhook():
     if url_match:
         url = url_match.group(0)
         text_content = extract_text_from_link(url)
+        print(text_content)
         if text_content:
             summary = summarize_text(text_content)  # Assuming you have a summarization function
             bot_resp = MessagingResponse()
