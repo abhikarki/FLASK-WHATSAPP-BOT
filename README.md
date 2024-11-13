@@ -18,6 +18,8 @@ Hosting: Heroku <br>
 ### How to Use
 ## Send an intial message "join loss-similar" to +1 (415)523-8886 for setup and you are good to go. Send the URLs and get the summaries.
 
+1. ![Screenshot](images/whatsappScreenshot.png)
+
 
 ### Future Improvements
 1. Enhance NLP model for better summarization
