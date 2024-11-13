@@ -1,7 +1,8 @@
-from flask import Blueprint, request, Response
+from flask import Blueprint, request, Response, Flask, request, jsonify
 import re
 import requests
 from bs4 import BeautifulSoup
+from twilio.twiml.messaging_response import MessagingResponse
 
 from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
@@ -15,8 +16,10 @@ def home():
 
 @main.route('/webhook', methods=['POST'])
 def webhook():
-    message = request.form.get('Body')
-    sender = request.form.get('From')
+    #message = request.form.get('Body')
+    message = request.values.get('Body', '')
+    sender = request.values.get('From', '')
+    response_text = "test"
 
     #Check for URL in the message
     url_match = re.search(r'http[s]?://\S+', message)
@@ -25,11 +28,15 @@ def webhook():
         text_content = extract_text_from_link(url)
         if text_content:
             summary = summarize_text(text_content)  # Assuming you have a summarization function
-            response_text = f"Summary: {summary}"
+            bot_resp = MessagingResponse()
+            response_text = bot_resp.message()
+            response_text.body(summary)
+            return str(bot_resp)
+            #response_text = f"Summary: {summary}"
         else:
             response_text = "Could not retrieve content from the link."
     else:
-        response_text = message
+        response_text = "No link"
 
     return Response(f"<Response><Message>{response_text}</Message></Response>", mimetype='text/xml')
 
