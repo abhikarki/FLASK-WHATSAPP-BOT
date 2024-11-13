@@ -42,11 +42,7 @@ def webhook():
         else:
             response_text = "Could not retrieve content from the link."
     else:
-        summary = summarize_text(message)
-        bot_resp = MessagingResponse()
-        response_text = bot_resp.message()
-        response_text.body(summary)
-        return str(bot_resp)
+        response_text = "No link in the message"
 
     return Response(f"<Response><Message>{response_text}</Message></Response>", mimetype='text/xml')
 
