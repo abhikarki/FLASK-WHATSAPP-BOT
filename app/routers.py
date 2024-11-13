@@ -30,21 +30,17 @@ def webhook():
     url_match = re.search(r'http[s]?://\S+', message)
     if url_match:
         url = url_match.group(0)
-        if 'facebook.com' in url:
-            url = extract_actual_link(url)
-        
-        if url:
-            text_content = extract_text_from_link(url)
-            print(text_content)
-            if text_content:
-                summary = summarize_text(text_content)  # Assuming you have a summarization function
-                bot_resp = MessagingResponse()
-                response_text = bot_resp.message()
-                response_text.body(summary)
-                return str(bot_resp)
-                #response_text = f"Summary: {summary}"
-            else:
-                response_text = "Could not retrieve content from the link."
+        text_content = extract_text_from_link(url)
+        print(text_content)
+        if text_content:
+            summary = summarize_text(text_content)  # Assuming you have a summarization function
+            bot_resp = MessagingResponse()
+            response_text = bot_resp.message()
+            response_text.body(summary)
+            return str(bot_resp)
+            #response_text = f"Summary: {summary}"
+        else:
+            response_text = "Could not retrieve content from the link."
     else:
         response_text = "No link"
 
@@ -52,23 +48,12 @@ def webhook():
 
 def extract_text_from_link(url):
     try:
-        response = requests.get(url)
+        response = requests.get(url, allow_redirects=True, timeout=10)
         soup = BeautifulSoup(response.content, 'html.parser')
         return ' '.join(p.get_text() for p in soup.find_all('p'))
     except Exception as e:
         return None
 
-
-def extract_actual_link(url):
-    try:
-        response = requests.get(url)
-        if response.status_code == 200:
-            soup = BeautifulSoup(response.content, 'html.parser')
-            actual_link = soup.find('meta', property='og:url')['content']
-            return actual_link
-        return None
-    except Exception as e:
-        return None
     
 
 def summarize_text(text):
