@@ -9,6 +9,10 @@ from sumy.summarizers.lex_rank import LexRankSummarizer
 
 main = Blueprint('main', __name__)
 
+@main.route('/')
+def home():
+    return 'Hello, world'
+
 @main.route('/webhook', methods=['POST'])
 def webhook():
     message = request.form.get('Body')
