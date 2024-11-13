@@ -13,6 +13,8 @@ from sumy.summarizers.lex_rank import LexRankSummarizer
 
 nltk.data.path.append('./nltk_data')
 
+from nltk.tokenize import sent_tokenize
+
 main = Blueprint('main', __name__)
 
 @main.route('/')
