@@ -22,7 +22,7 @@ Hosting: Heroku <br>
   <img src="images/whatsappScreenshot.png" alt="Image 1" width="50%" />
 </div>
 <div style="display: inline-block; width: 300; text-align: center;">
-  <img src="whatsappScreenshot.png" alt="Image 2" width="50%" />
+  <img src="images/whatsappScreenshot.png" alt="Image 2" width="50%" />
 </div>
 
 
