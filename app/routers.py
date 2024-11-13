@@ -11,6 +11,8 @@ from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.lex_rank import LexRankSummarizer
 
+nltk.data.path.append('./nltk_data')
+
 main = Blueprint('main', __name__)
 
 @main.route('/')
