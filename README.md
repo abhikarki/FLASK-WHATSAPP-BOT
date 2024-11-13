@@ -19,10 +19,10 @@ Hosting: Heroku <br>
 ## Send an intial message "join loss-similar" to +1 (415)523-8886 for setup and you are good to go. Send the URLs and get the summaries.
 
 <div style="display: inline-block; width: 300; text-align: center;">
-  <img src="images/whatsappScreenshot.png" alt="Image 1" width="100%" />
+  <img src="images/whatsappScreenshot.png" alt="Image 1" width="50%" />
 </div>
 <div style="display: inline-block; width: 300; text-align: center;">
-  <img src="images/screenshot2.jpeg" alt="Image 2" width="100%" />
+  <img src="whatsappScreenshot.png" alt="Image 2" width="50%" />
 </div>
 
 
