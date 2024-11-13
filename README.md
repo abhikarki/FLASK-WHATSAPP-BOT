@@ -10,13 +10,13 @@ The motivation behind this bot comes from the frequent appearance of Facebook po
 
 ### Technology Stack
 Languages: Python <br>
-Frameworks & Libraries: Flask, nltk
-APIs: Twilio API
-Hosting: Heroku
+Frameworks & Libraries: Flask, nltk <br>
+APIs: Twilio API <br>
+Hosting: Heroku <br>
 
 
 ### How to Use
-### Send an intial message "join loss-similar" to +1 (415)523-8886 for setup and you are good to go. Send the URLs and get the summaries.
+## Send an intial message "join loss-similar" to +1 (415)523-8886 for setup and you are good to go. Send the URLs and get the summaries.
 
 
 ### Future Improvements
