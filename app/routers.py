@@ -21,6 +21,8 @@ def webhook():
     sender = request.values.get('From', '')
     response_text = "test"
 
+    print(message)
+
     #Check for URL in the message
     url_match = re.search(r'http[s]?://\S+', message)
     if url_match:
