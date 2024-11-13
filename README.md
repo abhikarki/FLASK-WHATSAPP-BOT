@@ -18,7 +18,13 @@ Hosting: Heroku <br>
 ### How to Use
 ## Send an intial message "join loss-similar" to +1 (415)523-8886 for setup and you are good to go. Send the URLs and get the summaries.
 
-<img src="images/whatsappScreenshot.png" alt="Description of the image" width="400" height = "400"/>
+<div style="display: inline-block; width: 300; text-align: center;">
+  <img src="images/whatsappScreenshot.png" alt="Image 1" width="100%" />
+</div>
+<div style="display: inline-block; width: 300; text-align: center;">
+  <img src="images/screenshot2.jpeg" alt="Image 2" width="100%" />
+</div>
+
 
 ### Future Improvements
 1. Enhance NLP model for better summarization
