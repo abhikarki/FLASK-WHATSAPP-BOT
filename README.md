@@ -15,7 +15,7 @@ Have you ever clicked on a Facebook post with a headline that sounds too good to
 2. Content Summarization: Uses NLP to summarize the content of articles or any link in messages.
 3. Scalable: Built with Flask and Twilio API to handle backend communication and messaging.
 
-### Technology Stack
+### Tech Stack
 Languages: Python <br>
 Frameworks & Libraries: Flask, nltk <br>
 APIs: Twilio API <br>
